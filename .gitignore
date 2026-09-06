@@ -1,0 +1,26 @@
+# local cruft
+.DS_Store
+Thumbs.db
+*.bak
+*.bak-*
+.ledger
+.skillfish.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node
+node_modules/
+
+# editor
+.idea/
+.vscode/
+*.swp
+
+# local outputs / scratch
+/out/
+/tmp/
+*.local
