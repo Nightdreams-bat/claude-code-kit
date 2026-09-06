@@ -22,7 +22,7 @@ the top.
 
 | Idea taken | Person | Where it came from |
 |---|---|---|
-| Guardrail hook, `ask-then-build` / decide-before-building, one review pass by a different model, model-per-task, terminal YOLO aliases, ADRs in `docs/adr/`, "tell the model not to add tests", git-worktree parallelism | **David Ondrej** | *My Agentic Engineering Workflow* + [github.com/davidondrej/skills](https://github.com/davidondrej/skills) |
+| Guardrail hook, `ask-then-build` / decide-before-building, one review pass by a different model, model-per-task, terminal YOLO aliases, ADRs in `docs/adr/`, "tell the model not to add tests", git-worktree parallelism, `setup-help` (guided manual setup with a persistent remaining-steps list), `anti-sleep` (bounded keep-awake for unattended runs) | **David Ondrej** | *My Agentic Engineering Workflow* + [github.com/davidondrej/skills](https://github.com/davidondrej/skills) + *Don't use AI Agents without using these 8 skills* |
 | Manager/worker agent + explicit routing rules, the `no mistakes` review pipeline, "wrap CLIs to be token-efficient; CLIs beat MCP", WezTerm as the base terminal | **Kun** (ex-Meta, builds *first mate*) | *L8 Principal* podcast |
 | "Models are done — stop micromanaging, spend effort on *what* to build and on the markdown", "the backlog is dead — launch an agent", near-empty `AGENTS.md`, minimal MCP | **Thorsten Ball** (Amp / Sourcegraph) | *Agentic Engineering by a 10x dev* |
 | Self-hydrating knowledge (feed transcripts into a running master-context file), personal-life agents (daily brief, triage), "work *on* the machine, not *in* it" | **Flo Crivello** (Lindy) | *Ex-Uber dev's Multi-Agent Workflow* |

@@ -1,6 +1,6 @@
 # claude-code-kit
 
-My personal [Claude Code](https://claude.com/claude-code) setup — **23 skills, 23
+My personal [Claude Code](https://claude.com/claude-code) setup — **25 skills, 25
 slash commands, 7 subagents, and a terminal layer** for running several agents in
 parallel. It is a Windows-first, solo-developer adaptation of ideas from people
 who published their agentic-engineering workflows (see [CREDITS.md](CREDITS.md)).
@@ -9,8 +9,8 @@ Nothing here is a framework. Each piece is a plain markdown file Claude Code rea
 directly. Take the three you want and leave the rest.
 
 ```
-skills/      23 skill packages (SKILL.md + scripts/references)
-commands/    23 slash commands  (/careful, /review, /ask-build, …)
+skills/      25 skill packages (SKILL.md + scripts/references)
+commands/    25 slash commands  (/careful, /review, /ask-build, …)
 agents/      7 subagents        (planner, worker, adversarial reviewer, …)
 terminal/    WezTerm config + `aw` git-worktree helper + shell aliases
 ```
@@ -94,6 +94,13 @@ Some skills shell out to external tools — install only what you use:
 | **youtube-transcript** | Fetch a video's title, metadata, and full transcript as text/JSON. | amosblomqvist/pi-config |
 | **grilling** (`grill-me`) | Relentless round-based interview that maps your plan as a decision tree and refuses to let anything stay silently assumed. | open collection |
 
+### Machine & environment
+
+| Skill | What it does | From |
+|---|---|---|
+| **setup-help** | Guide *you* through a manual setup you must run yourself (deploy, DNS, VPS, migration) one step at a time, re-emitting the "still to do" list every turn so follow-up questions never lose the thread. | David Ondrej |
+| **anti-sleep** | Hold a bounded Windows wake lock (`SetThreadExecutionState`, default 3h) so unattended `/loop` / overnight runs don't get suspended. The OS clears it on exit — a kill can't leave the machine awake forever. | David Ondrej |
+
 ---
 
 ## Slash commands
@@ -107,11 +114,13 @@ Some skills shell out to external tools — install only what you use:
 `/prompt-me` (interview me to pull what's in my head) ·
 `/stop-overthinking` · `/goal` (write an autonomous-loop contract) ·
 `/handoff` (compact the session for a fresh agent) ·
-`/file-tree` · `/who` (background check on a person)
+`/file-tree` · `/who` (background check on a person) ·
+`/anti-sleep` (keep the machine awake for N hours)
 
 **Skill launchers:**
 `/ask-build` · `/content` · `/ctx` · `/dispatch` · `/hydrate` · `/level-up` ·
-`/review` · `/signal` · `/validate` · `/guard` (toggle the bash guard)
+`/review` · `/signal` · `/validate` · `/guard` (toggle the bash guard) ·
+`/setup-help` (guided manual setup)
 
 ---
 
