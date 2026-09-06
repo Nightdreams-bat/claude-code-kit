@@ -7,6 +7,11 @@ from open skill collections. This file records who each piece comes from.
 If you recognize your work and want the credit changed, expanded, or removed,
 open an issue.
 
+The repository is MIT-licensed (see [LICENSE](LICENSE)). Several skills are ports
+or adaptations of prior work by others, listed below; where a bundled component
+(a font, a tool) carries its own upstream license, that license governs that
+component.
+
 ## Workflow skills — synthesized from five published setups
 
 The `context-artifacts`, `manager`, `no-mistakes`, `ask-and-build`, `hydrate`,
