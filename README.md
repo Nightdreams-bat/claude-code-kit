@@ -1,4 +1,4 @@
-# claude-code-kit
+<img src="assets/header.png" alt="claude-code-kit" width="100%">
 
 My personal [Claude Code](https://claude.com/claude-code) setup — **25 skills, 25
 slash commands, 7 subagents, and a terminal layer** for running several agents in
